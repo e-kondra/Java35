@@ -1,3 +1,5 @@
+package basics;
+
 public class Variables {
     public static void main(String[] args) {
         //Declaring a new variable of type int
