@@ -32,6 +32,15 @@ public class TwoDimensionalArray {
             }
             System.out.println();
         }
-
+        for(String [] rows: dreamCars){
+            for(String col : rows){
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+        // Same using for each loop
+        for(String [] rows: dreamCars){
+            System.out.println(Arrays.toString(rows));
+        }
     }
 }
