@@ -21,7 +21,7 @@ public class HW5 {
         Your application should print true or false.*/
 
         Scanner scan  = new Scanner(System.in);
-        System.out.println("Please enter how much kg jam do you have to buy:");
+        System.out.println("Please enter how much kg jam do you need:");
         int kg = scan.nextInt();
 
         System.out.println(Math.floor(kg / 7) + (kg % 7) <= 6);
