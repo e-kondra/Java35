@@ -22,7 +22,7 @@ public class HW7 {
         int sizeOfArray = scanner.nextInt();
 
         arrayOfNumbers = new int[sizeOfArray];
-        System.out.println("Enter the elements of array one by one");
+        System.out.println("Enter the elements of the array one by one");
 
         for(int i = 0; i < arrayOfNumbers.length; i++){
             System.out.println("Please enter element number " + (i+1));
@@ -31,6 +31,8 @@ public class HW7 {
         }
 
         System.out.println("Source Array: " + Arrays.toString(arrayOfNumbers));
+        Arrays.sort(arrayOfNumbers);
+        System.out.println("Sorted Array: " + Arrays.toString(arrayOfNumbers));
         System.out.println("Sum of elements: " + sumOfElements);
     }
 }
