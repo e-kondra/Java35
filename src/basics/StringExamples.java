@@ -1,5 +1,7 @@
 package basics;
 
+import com.sun.jdi.CharValue;
+
 import java.util.Scanner;
 
 public class StringExamples {
@@ -38,6 +40,39 @@ public class StringExamples {
         System.out.println(greeting.replaceAll("holiday", "Christmas"));
         System.out.println(greeting.replaceFirst("holiday", "Easter"));
         System.out.println(greeting.replace("h","kh"));
+        //substrings
+        String introduction = "Hello my name is Bob and I'm 18";
+        System.out.println(introduction.substring(6));
+        System.out.println(introduction.substring(12, 18));
 
+        String BobsAge = introduction.substring(introduction.length()-2).trim();
+        System.out.println("Bob is "+ BobsAge + " years old");
+
+        int BobsAgeAsInt = Integer.parseInt(BobsAge);
+
+        if(BobsAgeAsInt >= 18){
+            System.out.println("adult");
+        }else {
+            System.out.println("child");
+        }
+        //Wrapper class
+        int temp1 = 36;
+        Integer temp2 = 36;
+        System.out.println(temp1);
+        System.out.println(temp2);
+
+        String intStrValue = "1";
+        String floatStrValue = "2.0";
+        String doubleStrValue = "2.235645";
+        String booleanStrValue = "true";
+        String longStrValue = "2323234445454";
+        String charStrValue = "h";
+
+        int intValue = Integer.parseInt(intStrValue);
+        float floatValue = Float.parseFloat(floatStrValue);
+        double doubleValue = Double.parseDouble(doubleStrValue);
+        boolean bolValue = Boolean.parseBoolean(booleanStrValue);
+        long longValue = Long.parseLong(longStrValue);
+        char charValue = charStrValue.charAt(0);
     }
 }
