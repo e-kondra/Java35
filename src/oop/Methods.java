@@ -11,6 +11,8 @@ public class Methods {
         int age = scanner.nextInt();
         printName(userName, age);
         System.out.println(greetings(userName));
+
+        System.out.println(sum(4, 5 , 7));
     }
 
     public static void printName(String name, int age){
@@ -24,4 +26,7 @@ public class Methods {
         return result;
     }
 
+    public static int sum(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
 }

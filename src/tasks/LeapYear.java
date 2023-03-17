@@ -8,17 +8,22 @@ public class LeapYear {
         System.out.println("Please enter the year");
 
         int year = scanner.nextInt();
+        System.out.println(determineLeapYear(year));
 
+    }
+    public static String determineLeapYear(int year){
+        String result;
         if (year < 0) {
-            System.out.println("Invalid input");
+            result = "Invalid input";
         } else if(year > 2100) {
-            System.out.println("You are looking too far in the future, live for today");
+            result = "You are looking too far in the future, live for today";
         } else {
             if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
-                System.out.println("Leap");
+                result = year + " is a leap year";
             } else {
-                System.out.println("Not leap");
+                result = year + " isn't a leap year";
             }
         }
+        return result;
     }
 }
