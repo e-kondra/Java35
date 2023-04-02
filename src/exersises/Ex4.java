@@ -20,5 +20,7 @@ public class Ex4 {
         and then calculate the installment amount based on the number of
         installments.
              Get the data from the user in the console using the Scanner class.*/
+        double amount;
+        int numberOfInstallments;
     }
 }
